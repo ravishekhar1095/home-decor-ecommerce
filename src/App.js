@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Fixed import
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CartProvider } from './contexts/CartContext';
@@ -49,9 +49,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AuthProvider>
-        <CartProvider>
-          <Router>
+      <Router> {/* Added Router wrapper */}
+        <AuthProvider>
+          <CartProvider>  
             <Navbar />
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -66,14 +66,11 @@ function App() {
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <Footer />
-          </Router>
-        </CartProvider>
-      </AuthProvider>
+          </CartProvider>
+        </AuthProvider>
+      </Router> {/* Closing Router */}
     </ThemeProvider>
   );
 }
 
 export default App;
-
-
-
