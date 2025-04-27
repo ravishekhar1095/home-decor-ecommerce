@@ -30,7 +30,39 @@ const HomePage = () => {
       category: 'textiles'
     },
     {
-      id: 4,
+      id: 5,
+      name: 'Industrial Floor Lamp',
+      price: 129.99,
+      image: '/images/lamp.jpg',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'lighting'
+    },
+    {
+      id: 6,
+      name: 'Industrial Floor Lamp',
+      price: 129.99,
+      image: '/images/lamp.jpg',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'lighting'
+    },
+    {
+      id: 7,
+      name: 'Industrial Floor Lamp',
+      price: 129.99,
+      image: '/images/lamp.jpg',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'lighting'
+    },
+    {
+      id: 8,
+      name: 'Industrial Floor Lamp',
+      price: 129.99,
+      image: '/images/lamp.jpg',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'lighting'
+    },
+    {
+      id: 9,
       name: 'Industrial Floor Lamp',
       price: 129.99,
       image: '/images/lamp.jpg',
